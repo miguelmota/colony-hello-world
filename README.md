@@ -1,6 +1,6 @@
 # colony-hello-world
 
-> Colony [Get Started](https://docs.colony.io/colonyjs/docs-get-started/) tutorial learning
+> Learning [Colony](https://colony.io/) by following the [Get Started](https://docs.colony.io/colonyjs/docs-get-started/) tutorial
 
 ## Instructions
 
