@@ -8,9 +8,9 @@ In terminal 1:
 
 1. Download [solc](https://github.com/ethereum/solidity):
 
-  ```bash
-  docker pull ethereum/solc:0.4.23
-  ```
+    ```bash
+    docker pull ethereum/solc:0.4.23
+    ```
 
 2. Clone colony smart contracts
 
