@@ -1,6 +1,6 @@
 # colony-hello-world
 
-> Colony [Get Started](https://docs.colony.io/colonyjs/docs-get-started/) tutorial
+> Colony [Get Started](https://docs.colony.io/colonyjs/docs-get-started/) tutorial learning
 
 ## Development
 
@@ -26,42 +26,46 @@ In terminal 1:
 
   ```bash
   yarn
+  ```
 
+4. Install trufflepig cli:
+
+  ```bash
   yarn global add trufflepig
   ```
 
-4. Start gananche (in separate terminal):
+5. Start gananche (in separate terminal):
 
   ```bash
   ./node_modules/.bin/ganache-cli -d --gasLimit 7000000 --acctKeys ganache-accounts.json
   ```
 
-5. Deploy contracts:
+6. Deploy contracts:
 
   ```bash
   ./node_modules/.bin/truffle migrate --reset --compile-all
   ```
 
-6. Start trufflepig:
+7. Start trufflepig:
 
   ```bash
   trufflepig --ganacheKeyFile ganache-accounts.json
   ```
 
-7. Clone this repository (in another terminal):
+8. Clone this repository (in another terminal):
 
   ```bash
   git clone git@github.com:miguelmota/colony-hello-world.git
   cd colony-hello-world/
   ```
 
-8. Install dependencies:
+9. Install dependencies:
 
   ```bash
   yarn
   ```
 
-9. Start colony:
+10. Start colony:
 
   ```bash
   node index.js
