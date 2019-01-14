@@ -19,7 +19,15 @@ In terminal 1:
   cd colonyNetwork
 
   # checkout a stable revision
-  git checkout d50abbeb9f119850cb70e9ec854576123a707205
+  git checkout f73dc84a41f5fc1962c999a24e13b15ba491b8a6
+  ```
+
+3. Install and provision submodules:
+
+  ```bash
+  git submodule update --init --recursive
+
+  yarn provision:token:contracts
   ```
 
 3. Install dependencies:
