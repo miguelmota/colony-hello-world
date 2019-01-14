@@ -1,0 +1,12 @@
+{
+  "name": "colony-hello-world",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@colony/colony-js-adapter-ethers": "1.7.0",
+    "@colony/colony-js-client": "^1.9.0",
+    "@colony/colony-js-contract-loader-http": "1.6.2",
+    "ethers": "^4.0.20"
+  }
+}
