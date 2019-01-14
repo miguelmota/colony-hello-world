@@ -6,7 +6,7 @@
 
 In terminal 1:
 
-1. Download solc:
+1. Download [solc](https://github.com/ethereum/solidity):
 
   ```bash
   docker pull ethereum/solc:0.4.23
@@ -30,19 +30,19 @@ In terminal 1:
   yarn provision:token:contracts
   ```
 
-3. Install dependencies:
+4. Install dependencies:
 
   ```bash
   yarn
   ```
 
-4. Install trufflepig cli:
+5. Install [trufflepig](https://github.com/JoinColony/trufflepig) cli:
 
   ```bash
   yarn global add trufflepig
   ```
 
-5. Start gananche (in separate terminal):
+6. Start gananche (in separate terminal):
 
   ```bash
   ./node_modules/.bin/ganache-cli --acctKeys "./ganache-accounts.json" --noVMErrorsOnRPCResponse --gasLimit 6721975 \
@@ -60,32 +60,32 @@ In terminal 1:
     --account="0x32400a48ff16119c134eef44e2627502ce6e367bc4810be07642275a9db47bf7, 100000000000000000000"
   ```
 
-6. Deploy contracts:
+7. Deploy contracts:
 
   ```bash
   ./node_modules/.bin/truffle migrate --reset --compile-all
   ```
 
-7. Start trufflepig:
+8. Start trufflepig:
 
   ```bash
   trufflepig --ganacheKeyFile ganache-accounts.json
   ```
 
-8. Clone this repository (in another terminal):
+9. Clone this repository (in another terminal):
 
   ```bash
   git clone git@github.com:miguelmota/colony-hello-world.git
   cd colony-hello-world/
   ```
 
-9. Install dependencies:
+10. Install dependencies:
 
   ```bash
   yarn
   ```
 
-10. Run example:
+11. Run example:
 
   ```bash
   node index.js
