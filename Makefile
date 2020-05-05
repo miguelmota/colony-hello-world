@@ -1,8 +1,8 @@
 all:
 	@echo "no default"
 
-.PHONY: start/ganache
-start/ganache:
+.PHONY: start-ganache
+start-ganache:
 	@./node_modules/.bin/ganache-cli --acctKeys "./ganache-accounts.json" --noVMErrorsOnRPCResponse --gasLimit 6721975 \
     --account="0x0355596cdb5e5242ad082c4fe3f8bbe48c9dba843fe1f99dd8272f487e70efae, 100000000000000000000" \
     --account="0xe9aebe8791ad1ebd33211687e9c53f13fe8cca53b271a6529c7d7ba05eda5ce2, 100000000000000000000" \
@@ -17,10 +17,10 @@ start/ganache:
     --account="0x33d2f6f6cc410c1d46d58f17efdd2b53a71527b27eaa7f2edcade351feb87425, 100000000000000000000" \
     --account="0x32400a48ff16119c134eef44e2627502ce6e367bc4810be07642275a9db47bf7, 100000000000000000000"
 
-.PHONY: start/trufflepig
-start/trufflepig:
+.PHONY: start-trufflepig
+start-trufflepig:
 	@trufflepig --ganacheKeyFile ganache-accounts.json
 
-.PHONY: compile/contracts
-compile/contracts:
+.PHONY: compile-contracts
+compile-contracts:
 	@./node_modules/.bin/truffle migrate --reset --compile-all
